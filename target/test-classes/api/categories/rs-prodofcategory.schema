@@ -1,0 +1,83 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "products",
+        "total",
+        "skip",
+        "limit"
+    ],
+    "properties": {
+        "products": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "title",
+                    "description",
+                    "price",
+                    "discountPercentage",
+                    "rating",
+                    "stock",
+                    "brand",
+                    "category",
+                    "thumbnail",
+                    "images"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "number"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "number"
+                    },
+                    "discountPercentage": {
+                        "type": "number"
+                    },
+                    "rating": {
+                        "type": "number"
+                    },
+                    "stock": {
+                        "type": "number"
+                    },
+                    "brand": {
+                        "type": "string"
+                    },
+                    "category": {
+                        "type": "string"
+                    },
+                    "thumbnail": {
+                        "type": "string"
+                    },
+                    "images": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "total": {
+            "type": "number",
+            "default": 0
+        },
+        "skip": {
+            "type": "number",
+            "default": 0
+        },
+        "limit": {
+            "type": "number",
+            "default": 0
+        }
+    }
+}

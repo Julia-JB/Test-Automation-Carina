@@ -1,0 +1,98 @@
+[2023-08-16 05:53:25] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-16 05:53:25] [1] [INFO] TEST [qa-project - testLogin] STARTED at [10:53:25 2023-08-16]
+[2023-08-16 05:53:25] [1] [INFO] Starting driver session...
+[2023-08-16 05:53:26] [1] [INFO] Driver session started.
+[2023-08-16 05:53:26] [1] [INFO] INFO: opening url 'https://www.facebook.com/'
+[2023-08-16 05:53:27] [1] [INFO] PASS: keys 'testUser@rgmail.com' are sent to element 'emailField'.
+[2023-08-16 05:53:27] [1] [INFO] PASS: keys 'pass' are sent to element 'passwordField'.
+[2023-08-16 05:53:28] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2023-08-16 05:53:51] [1] [ERROR] Undefined error on capture screenshot detected!
+[2023-08-16 05:53:51] [1] [ERROR] TEST [qa-project - testLogin] FAILED at [10:53:51 2023-08-16] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=115.0.5790.170)
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f960fc3b82076edfe82066fe4a2736fd, findElements {using=id, value=error_box}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/ws/jq54_ggn5mg...}, goog:chromeOptions: {debuggerAddress: localhost:51688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.219:4444/sessio..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f960fc3b82076edfe82066fe4a2736fd
+
+java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+org.openqa.selenium.remote.RemoteWebDriver.findElements$original$XAmArUzg(RemoteWebDriver.java:380)
+org.openqa.selenium.remote.RemoteWebDriver.findElements$original$XAmArUzg$accessor$V5EzQzjA(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$yxnNbEzR.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver.findElements$original$XAmArUzg(RemoteWebDriver.java:372)
+org.openqa.selenium.remote.RemoteWebDriver.findElements$original$XAmArUzg$accessor$V5EzQzjA(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$aTAnmfMo.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:577)
+org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+net.bytebuddy.renamed.java.lang.Object$ByteBuddy$N0UeSJEj.findElements(Unknown Source)
+com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:146)
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+jdk.proxy2/jdk.proxy2.$Proxy89.toString(Unknown Source)
+java.base/java.util.Formatter$FormatSpecifier.printString(Formatter.java:3136)
+java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3013)
+java.base/java.util.Formatter.format(Formatter.java:2769)
+java.base/java.util.Formatter.format(Formatter.java:2705)
+java.base/java.lang.String.format(String.java:4138)
+org.openqa.selenium.support.ui.ExpectedConditions$24.toString(ExpectedConditions.java:699)
+java.base/java.lang.String.valueOf(String.java:4213)
+java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+org.openqa.selenium.support.ui.ExpectedConditions$30.toString(ExpectedConditions.java:846)
+com.google.common.base.Joiner.toString(Joiner.java:492)
+com.google.common.base.Joiner.appendTo(Joiner.java:117)
+com.google.common.base.Joiner.appendTo(Joiner.java:169)
+com.google.common.base.Joiner.appendTo(Joiner.java:155)
+com.google.common.base.Joiner.appendTo(Joiner.java:183)
+org.openqa.selenium.support.ui.ExpectedConditions$49.toString(ExpectedConditions.java:1434)
+java.base/java.lang.String.valueOf(String.java:4213)
+java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.waitUntil(ExtendedWebElement.java:273)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1495)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1487)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getText(ExtendedWebElement.java:362)
+gui.automation.pages.FBHomePage.getErrorText(FBHomePage.java:33)
+gui.automation.TestLogin.testLogin(TestLogin.java:19)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:577)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

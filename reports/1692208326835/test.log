@@ -1,0 +1,23 @@
+[2023-08-16 05:52:06] [1] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.facebook.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+[2023-08-16 05:52:06] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-16 05:52:08] [1] [INFO] [TestNG] Running:
+  /Users/juliabatsheva/Library/Caches/JetBrains/IdeaIC2022.3/temp-testng-customsuite.xml
+
+[2023-08-16 05:52:08] [1] [INFO] Set thread-count=1
+[2023-08-16 05:52:08] [1] [INFO] Set data-provider-thread-count=1
+[2023-08-16 05:52:08] [1] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2023-08-16 05:52:31] [18] [WARN] Trying to quit driver 'default' on shutdown hook action!

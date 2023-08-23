@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema",
+  "type": "object",
+  "default": {},
+  "required": [
+    "id",
+    "title",
+    "description",
+    "price",
+    "discountPercentage",
+    "rating",
+    "stock",
+    "brand",
+    "category",
+    "thumbnail",
+    "images",
+    "isDeleted",
+    "deletedOn"
+  ],
+  "properties": {
+    "id": {
+      "type": "number",
+      "default": 0
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "description": {
+      "type": "string",
+      "default": ""
+    },
+    "price": {
+      "type": "number",
+      "default": 0
+    },
+    "discountPercentage": {
+      "type": "number",
+      "default": 0.0
+    },
+    "rating": {
+      "type": "number",
+      "default": 0.0
+    },
+    "stock": {
+      "type": "number",
+      "default": 0
+    },
+    "brand": {
+      "type": "string",
+      "default": ""
+    },
+    "category": {
+      "type": "string",
+      "default": ""
+    },
+    "thumbnail": {
+      "type": "string",
+      "default": ""
+    },
+    "images": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "isDeleted": {
+      "type": "boolean",
+      "default": true
+    },
+    "deletedOn": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+    }
+  }
+}

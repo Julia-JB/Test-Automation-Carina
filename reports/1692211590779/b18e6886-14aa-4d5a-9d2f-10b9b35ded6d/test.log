@@ -1,0 +1,39 @@
+[2023-08-16 06:46:32] [28] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-16 06:46:32] [28] [INFO] TEST [Hello World test - testLogin] STARTED at [11:46:32 2023-08-16]
+[2023-08-16 06:46:32] [28] [INFO] Starting driver session...
+[2023-08-16 06:46:33] [28] [INFO] Driver session started.
+[2023-08-16 06:46:33] [28] [INFO] INFO: opening url 'https://www.facebook.com/'
+[2023-08-16 06:46:34] [28] [INFO] PASS: keys 'testUser@rgmail.com' are sent to element 'emailField'.
+[2023-08-16 06:46:34] [28] [INFO] PASS: keys 'pass' are sent to element 'passwordField'.
+[2023-08-16 06:46:35] [28] [INFO] PASS: element 'loginBtn' is clicked.
+[2023-08-16 06:46:58] [28] [ERROR] FAIL: get_text - waitCondition for element 'errorBox (By.id: error_box)' not satisfied!
+[2023-08-16 06:46:58] [28] [ERROR] TEST [Hello World test - testLogin] FAILED at [11:46:58 2023-08-16] - no such element By.id: error_box
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.2'
+Driver info: driver.version: unknown
+
+com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:157)
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+jdk.proxy2/jdk.proxy2.$Proxy87.getText(Unknown Source)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement$3.doGetText(ExtendedWebElement.java:1621)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1415)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1531)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1510)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1487)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getText(ExtendedWebElement.java:362)
+gui.automation.pages.FBHomePage.getErrorText(FBHomePage.java:33)
+gui.automation.TestLogin.testLogin(TestLogin.java:19)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:577)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

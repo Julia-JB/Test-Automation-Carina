@@ -1,0 +1,8 @@
+[2023-08-16 05:52:08] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-16 05:52:08] [1] [INFO] TEST [qa-project - testLogin] STARTED at [10:52:08 2023-08-16]
+[2023-08-16 05:52:08] [1] [INFO] Starting driver session...
+[2023-08-16 05:52:09] [1] [INFO] Driver session started.
+[2023-08-16 05:52:09] [1] [INFO] INFO: opening url 'https://www.facebook.com/'
+[2023-08-16 05:52:10] [1] [INFO] PASS: keys 'testuser@rgmail.com' are sent to element 'emailField'.
+[2023-08-16 05:52:10] [1] [INFO] PASS: keys 'pass' are sent to element 'passwordField'.
+[2023-08-16 05:52:11] [1] [INFO] PASS: element 'loginBtn' is clicked.
